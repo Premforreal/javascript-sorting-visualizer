@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+        <h1>Sorting Visualizer</h1>
+        <div class="sliders">
+                <p>array size</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="arraySize">
+                <p>sorting speed</p>
+                <input type="range" min="1" max="100" value="0" class="slider" id="speed">
+                
+        </div>
+            <div  class="sorting">
+                <button id="generateNewArray">Generate New array</button>
+                <button id="bubble">Bubble Sort</button>
+                <button id="selection">Selection Sort</button>
+                <button id="insertion">Insertion Sort</button>
+                <button id="merge">Merge Sort</button>
+                <!-- <button id="heap">Heap Sort</button> -->
+                <button id="quick">Quick Sort</button>
+            </div>
+            <div class="github">
+              <a href="https://github.com/Premforreal" target="_blank"> 
+                <img src="icons8-github-48.png" alt="github">
+              </a>
+            </div>
+            
+    </div>
+
+    <div class="flex-container" id="bars">
+
+    </div>
+    <div class="info" id="bubbleInfo">
+      Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order (ascending or descending arrangement). The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+      <ul>
+        <li>Time Complexity : O(n^2)</li>
+        <li>Space Complexity : O(1)</li>
+      </ul>
+    </div>
+
+    <div class="info" id="selectionInfo">
+      Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
+      <ul>
+        <li>Time Complexity : O(n^2)</li>
+        <li>Space Complexity : O(1)</li>
+      </ul>
+    </div>
+
+    <div class="info" id="insertionInfo">
+      Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+      <ul>
+        <li>Time Complexity : O(n^2)</li>
+        <li>Space Complexity : O(1)</li>
+      </ul>
+    </div>
+
+    <div class="info" id="mergeInfo">
+      Merge Sort is based on the principle of Divide and Conquer Algorithm.
+      The MergeSort function repeatedly divides the array into two halves until we reach a stage where we try to perform MergeSort on a subarray of size 1.
+
+After that, the merge function comes into play and combines the sorted arrays into larger arrays until the whole array is merged.
+      <ul>
+        <li>Time Complexity : O(nlogn)</li>
+        <li>Space Complexity : O(n)</li>
+      </ul>
+    </div>
+
+    <div class="info" id="quickInfo">
+        Quck sort is a Divide and Conquer Algorithm. It finds a pivot number and makes sure 
+        that all the smaller values are located to the left of the pivot and all the larger values to its right.
+        Unlike Merge sort extra space is not required.
+      <ul>
+        <li>Time Complexity : O(n^2)</li>
+        <li>Space Complexity : O(logn)</li>
+      </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
