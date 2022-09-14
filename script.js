@@ -66,7 +66,7 @@ function disableSortingBtn(){
     document.getElementById("merge").disabled = true;
     document.getElementById("quick").disabled = true;
     document.getElementById("selection").disabled = true;
-    //document.getElementById("heap").disabled = true;
+  
 }
 function enableSortingBtn(){
     document.getElementById("bubble").disabled = false;
@@ -74,7 +74,7 @@ function enableSortingBtn(){
     document.getElementById("merge").disabled = false;
     document.getElementById("quick").disabled = false;
     document.getElementById("selection").disabled = false;
-    // document.getElementById("heap").disabled = false;
+   
 }
 function disableSizeSlider(){
     arraySize.disabled = true;
